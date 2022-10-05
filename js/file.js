@@ -16,13 +16,29 @@
 
 
 
-  function filterArray(numbers, value) {
-    // Change code below this line
-   const newArray = [];
- for (let i=0; i <= numbers.length; i+=1) 
-   if (numbers[i] > value) {
-   newArray.push(numbers[i]);
-  
-   }
- 
- return newArray;
+//   function filterArray(numbers, value) {
+//     // Change code below this line
+//    const newArray = [];
+//  for (let i=0; i <= numbers.length; i+=1) 
+//    if (numbers[i] > value) {
+//    newArray.push(numbers[i]);
+//    }
+//  return newArray;
+// }
+
+
+// const numbers = [51,18,13,20]; 
+// let smalletstMun = numbers[0];
+// for(const)
+
+
+// const friends = ['Mango', 'Pol', 'Ann'];
+// let string = '';
+// for (const friend of friends) {
+//   string +=friend + ',';
+// }
+// string = string.slice(0, string.length -1);
+// console.log(string);
+
+
+
