@@ -4,12 +4,19 @@ const cart = {
         return this.items;  
     },
     add (product) {
+        for (const item of this.items) {
+
+            if (item.name === product.name) {
+                item.quantity += 1;
+                return;
+            }
+        }
         const newProduct = {
             ...product,
-            quantity: 0,
+            quantity: 1,
         };
 
-        this.items.push(product);
+        this.items.push(newProduct);
     },
     remove (productName) {
 
@@ -28,8 +35,8 @@ const cart = {
     countTotalPrice() {
         let total = 0;
 
-        for ( const item of this.items) {
-            total += item.price;
+        for ( const item.price, item.quantity of this.items) {
+            total += item.price * item.quantity;
         }
         return total;
     },  
