@@ -27,7 +27,11 @@ const calculateTotal = function (items) {
   }
   return total;
 };
-   console.log ();
+  const result = calculateTotal([1,2,3]);
+  console.log (`total price of items ${result} `);
+
+
+
 
 
   
