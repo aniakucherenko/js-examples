@@ -21,17 +21,29 @@
 // const doMath = function (a,b, callback); {
 // }
 
-const calculateTotal = function (items) {
-  for (const item of items) {
-    total += item;
+// const calculateTotal = function (items) {
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// };
+//   const result = calculateTotal([1,2,3]);
+//   console.log (`total price of items ${result} `);
+
+
+  
+
+  function deliverPizza(pizzaName) {
+    return `Delivering ${pizzaName} pizza.`;
   }
-  return total;
-};
-  const result = calculateTotal([1,2,3]);
-  console.log (`total price of items ${result} `);
-
-
-
+  
+  function makePizza(pizzaName) {
+    return `Pizza ${pizzaName} is being prepared, please wait...`;
+  }
+  
+  function makeMessage(pizzaName, callback) {
+    return callback (pizzaName);
+  }
 
 
   
