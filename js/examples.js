@@ -10,12 +10,24 @@
 //   }
 
 
-  function makePizza() {
-    return "Your pizza is being prepared, please wait.";
+  // function makePizza() {
+  //   return "Your pizza is being prepared, please wait.";
+  // }
+  
+  // const result = null;
+  // const pointer = null;
+
+
+// const doMath = function (a,b, callback); {
+// }
+
+const calculateTotal = function (items) {
+  for (const item of items) {
+    total += item;
   }
-  // Change code below this line
-  
-  const result = null;
-  const pointer = null;
-  
+  return total;
+};
+   console.log ();
+
+
   
