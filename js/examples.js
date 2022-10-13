@@ -93,3 +93,23 @@
   });
     return totalPrice;
   }
+
+
+
+
+  // function changeEven(numbers, value) {
+  //   const newArray = [];
+  //   numbers.forEach ( element => {
+  //     if (element % 2 === 0) {
+  //     newArray.push(element + value)
+        
+  //     } else newArray.push(element)
+      
+  //   // for (let i = 0; i < numbers.length; i += 1) {
+  //   //   if (numbers[i] % 2 === 0) {
+  //   //     numbers[i] = numbers[i] + value;
+  //   //   }
+      
+  //     });
+  //   return newArray;
+  // }
