@@ -98,18 +98,25 @@ const users = [
       gender: "female"
     }
   ]
-  const getNamesSortedByFriendCount = users => {
-    return users
-    .sort((a, b) => a.friends.length - b.friends.length)
-    .map(user => user.name)
- };
+//   const getNamesSortedByFriendCount = users => {
+//     return users
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(user => user.name)
+//  };
 
- console.log(getNamesSortedByFriendCount(users));
+//  console.log(getNamesSortedByFriendCount(users));
+
+const getTotalBalanceByGender = (users, gender) => {
+    const getGender = users.filter((user, index, users) => user.gender === gender);
+      const getBalance = getGender.flatMap(user => user.balance);
+      const totalBalance = getBalance.reduce((previousValue, number) => {
+        return previousValue + number;
+      }, 0);
+return totalBalance;
+    };
 
 
-
-
-
+console.log (totalBalance);
 
 
 
