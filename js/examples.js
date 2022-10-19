@@ -219,27 +219,95 @@
 
 
 
-const pizzaPalace = {
-  pizzas: ["Supercheese", "Smoked", "Four meats"],
-  // Change code below this line
-  checkPizza(pizzaName) {
-    return pizzas.includes(pizzaName);
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+//     return pizzas.includes(pizzaName);
   
-  },
-  order(pizzaName) {
-    const isPizzaAvailable = checkPizza(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = checkPizza(pizzaName);
 
-    if (!isPizzaAvailable) {
-      return `Sorry, there is no pizza named «${pizzaName}»`;
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+//   // Change code above this line
+// };
+
+// console.log (pizzaPalace);
+
+// console.log (pizzas.includes(pizzaName));
+
+// console.log (this.pizzas);
+
+
+
+
+
+
+// class StringBuilder {
+//   constructor (initialValue) {
+//    this.value = initialValue;
+//   }
+//    getValue(){
+//    return this.value; 
+//    }
+//    padEnd(str){
+//    this.value = this.value + str;
+//    }
+//    padStart(str){
+//    this.value = str + this.value;
+//    }
+//    padBoth(str){
+//     this.value = str + this.value + str; 
+//    }
+//  }
+ 
+ 
+//  // Change code above this line
+//  const builder = new StringBuilder(".");
+//  console.log(builder.getValue()); // "."
+//  builder.padStart("^");
+//  console.log(builder.getValue()); // "^."
+//  builder.padEnd("^");
+//  console.log(builder.getValue()); // "^.^"
+//  builder.padBoth("=");
+//  console.log(builder.getValue()); // "=^.^="
+ 
+
+ class Car {
+  // Change code below this line
+  static MAX_PRICE = 50000;
+  
+  #price;
+  
+  constructor({ price }) {
+    this.#price = price;
+  }
+
+  get price() {
+    return this.#price;
+  }
+
+  set price(newPrice) {
+    if (newPrice <= MAX_PRICE) {
+       this.#price = newPrice;
     }
-
-    return `Order accepted, preparing «${pizzaName}» pizza`;
-  },
+  }
+  
   // Change code above this line
-};
+}
 
-console.log (pizzaPalace);
+const audi = new Car({ price: 35000 });
+console.log(audi.price); // 35000
 
-console.log (pizzas.includes(pizzaName));
+audi.price = 49000;
+console.log(audi.price); // 49000
 
-console.log (this.pizzas);
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
