@@ -279,35 +279,58 @@
 //  console.log(builder.getValue()); // "=^.^="
  
 
- class Car {
-  // Change code below this line
-  static MAX_PRICE = 50000;
+//  class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000;
   
-  #price;
+//   #price;
   
-  constructor({ price }) {
-    this.#price = price;
-  }
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
 
-  get price() {
-    return this.#price;
-  }
+//   get price() {
+//     return this.#price;
+//   }
 
-  set price(newPrice) {
-    if (newPrice <= MAX_PRICE) {
-       this.#price = newPrice;
-    }
-  }
+//   set price(newPrice) {
+//     if (newPrice <= MAX_PRICE) {
+//        this.#price = newPrice;
+//     }
+//   }
   
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
-const audi = new Car({ price: 35000 });
-console.log(audi.price); // 35000
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
 
-audi.price = 49000;
-console.log(audi.price); // 49000
-
-// audi.price = 51000;
+// audi.price = 49000;
 // console.log(audi.price); // 49000
 
+// // audi.price = 51000;
+// // console.log(audi.price); // 49000
+
+
+const Kerbin = {
+    name: 'Kerbin'
+
+}
+
+
+const mainCore = {
+    getMainInfo() {
+    return `Robot ${this.name}, cpu version ${this.cpuVersion}`
+    }
+
+getAdditionalInfo () {
+   return Update version: `${this.softwareVersion}`
+}
+updateRobot () {
+    this.softwareVersion = updateVersion
+    return `${this.name}` updated to `$updateVersion`
+}
+
+
+
+}
