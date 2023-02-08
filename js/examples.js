@@ -311,26 +311,23 @@
 // // audi.price = 51000;
 // // console.log(audi.price); // 49000
 
+// const Kerbin = {
+//     name: 'Kerbin'
+// }
 
-const Kerbin = {
-    name: 'Kerbin'
+// const mainCore = {
+//     getMainInfo() {
+//     return `Robot ${this.name}, cpu version ${this.cpuVersion}`
+//     }
 
-}
+// getAdditionalInfo () {
+//    return Update version: `${this.softwareVersion}`
+// }
+// updateRobot () {
+//     this.softwareVersion = updateVersion
+//     return `${this.name}` updated to `$updateVersion`
+// }
+// }
 
-
-const mainCore = {
-    getMainInfo() {
-    return `Robot ${this.name}, cpu version ${this.cpuVersion}`
-    }
-
-getAdditionalInfo () {
-   return Update version: `${this.softwareVersion}`
-}
-updateRobot () {
-    this.softwareVersion = updateVersion
-    return `${this.name}` updated to `$updateVersion`
-}
-
-
-
-}
+const isComing = confirm("Please confirm hotel reservation");
+console.log(isComing);
